@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hero Section | GreatFrontEnd Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+
+      body {
+        height: 100vh;
+        font-family: "Noto Sans", sans-serif;
+        background: linear-gradient(150deg, #F9FAFB, #D2D6DB);
+        padding-top: 100px;
+      }
+
+      .container {
+        max-width: 1440px;
+        padding: 0 32px;
+        width: 100%;
+
+        background: #fff;
+        margin: auto;
+        padding: 96px;
+
+        display: flex;
+        align-items: center;
+        column-gap: 32px;
+      }
+
+      .hero-headline {
+        display: flex;
+        flex-direction: column;
+        row-gap: 64px;
+      }
+
+      .hero-header {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+      }
+
+      .hero-header__heading {
+        font-size: 3.75rem;
+        font-weight: 600;
+        line-height: 60px;
+        color: #171717;
+      }
+
+      .hero-header__description {
+        font-size: 1.25rem;
+        color:#525252;
+        font-weight: 400;
+        line-height: 28px;
+      }
+
+      .hero-image {
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .buttons {
+        display: flex;
+        column-gap: 32px;
+      }
+
+      button {
+        font-size: 18px;
+        padding: 16px 24px;
+        width: 175px;
+        height: fit-content;
+      }
+
+      .button__learn-more {
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        color: #171717;
+        border-radius: 4px;
+      }
+
+      .button__learn-more:hover {
+        background-color: #fafafa;
+      }
+
+      .button__see-pricing {
+        background-color: #4338CA;
+        border: 1px solid #4338CA;
+        color: #e5e5e5;
+        border-radius: 4px;
+      }
+
+      .button__see-pricing:hover {
+        background-color: #3730A3;
+      }
+
+      .button__learn-more:focus,
+      .button__see-pricing:focus {
+        outline: 4px solid rgba(68, 76, 231, 0.12);
+      }
+
+      .button__learn-more:disabled,
+      .button__see-pricing:disabled {
+        color: #a3a3a3;
+        background-color: #f5f5f5;
+        border: 1px solid #e5e5e5;
+      }
+      
+      @media (max-width: 768px) {
+        .container {
+          flex-wrap: wrap;
+          row-gap: 32px;
+          padding: 64px 16px;
+        }
+
+        .hero-header__heading {
+          font-size: 3rem;
+          line-height: 48px;
+        }
+
+        button {
+          width: 213px;
+          height: fit-content;
+        }
+      }
+
+      @media (max-width: 500px) {
+        .container {
+          flex-wrap: wrap;
+          row-gap: 32px;
+          padding: 48px 12px;
+        }
+
+        .hero-header__heading {
+          font-size: 2.25rem;
+          line-height: 48px;
+        }
+
+        .buttons {
+          column-gap: 16px;
+        }
+
+        button {
+          font-size: 1rem;
+          width: 100%;
+          height: fit-content;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="hero-headline">
+        <header class="hero-header">
+          <h1 class="hero-header__heading">Well crafted abstract images</h1>
+          <p class="hero-header__description">
+            High quality abstract images for your projects, wallpaper and presentations.
+          </p>
+        </header>
+
+        <div class="buttons">
+          <button type="button" class="button__learn-more">
+            Learn more
+          </button>
+          <button type="button" class="button__see-pricing">
+            See pricing
+          </button>
+        </div>
+      </section>
+      <section class="hero-image">
+        <img src="./img/prism.png" alt="Hero Image" class="hero-image">
+      </section>
+    </div>
+  </body>
+</html>
